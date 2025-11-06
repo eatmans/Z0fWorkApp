@@ -115,11 +115,11 @@ public class WorkHelperApp {
     private void setWindowIcon() {
         try {
             // 尝试设置窗口图标（如果有的话）
-            // ImageIcon icon = new ImageIcon(getClass().getResource("/icons/app-icon.png"));
-            // frame.setIconImage(icon.getImage());
+             ImageIcon icon = new ImageIcon(getClass().getResource("/icons/app-logo.png"));
+             frame.setIconImage(icon.getImage());
 
             // 设置任务栏图标（Windows）
-//            Taskbar taskbar = Taskbar.getTaskbar();
+            Taskbar taskbar = Taskbar.getTaskbar();
             try {
                 // 如果找到图标文件，设置任务栏图标
                 // taskbar.setIconImage(icon.getImage());
